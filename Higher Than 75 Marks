@@ -1,0 +1,1 @@
+select Name from (select Name, right(Name, 3) as threeCharacters,ID from STUDENTS where Marks > 75 order by threeCharacters, ID) as childrenSelector;
